@@ -18,102 +18,8 @@ People
 Messages
 Help
 COMMUNITY
-LIVE
-LLM Prompt Engineering and RLHF: History and Techniques
 Note this talk was recorded before the public release of OpenAI’s new ChatGPT API — to learn more about how ChatGPT compares with GPT-3, check out our head-to-head comparison (https://scale.com/blog/chatgpt-vs-davinci) on Scale’s blog, and stay tuned for live Q&A following Riley’s talk!
 
-
-Radu Gheorghiu
-Data Engineer @ Independent Consultant
-@Brandon, you're right, Joe is not going to tune its own model anytime soon, I think.
-
-Haseeb Mohammed
-Principal Machine Learning Engineer @ Amgen
-fine tune it _on the chat_
-
-John Kohlmeyer
-Developer @ DriveCentric
-@cristiano - absolutely for debugging
-
-David Plon
-Co-founder & CEO @ Portrait Analytics
-I get that temp=0 is preferred for most prompts, but for self-consistency, wouldn't you just get the same response each time? So trying to figure out which temp is best for sampling n times
-
-Ana Ferreira
-data ops @ talkdesk
-@riley, is there a knowledge about in which cases the same temperature geenrates a different response? Today a certain prompt gave the same response for 5 hours and then it didn't
-
-EJ Lawless
-Director, Corporate Venture @ Indeed.com
-does this make password cracking easier (potentially)?
-
-Nishank Kuppa
-Mechanical Engineer @ Maxar Technologies
-Thanks Ragu, will definitely check that out!
-
-Nishank Kuppa
-Mechanical Engineer @ Maxar Technologies
-*Radu
-
-Connor Hagen
-Senior Business Development Manager @ Microsoft
-there's a soft place in my heart for Douglas Hofstadter
-
-Riley Goodside
-Staff Prompt Engineer @ Scale
-@David Depends on the task. Temperature can't be too low for consensus since you need some diversity. I often set temp=1 and use top_p instead, usually around 0.9.
-
-Rahul Parundekar
-CEO @ AI Hero
-@Jorge - that's unfortunate - if it can guarantee same output for the same input, maybe integrations on top of products, etc. can be more feasible. I'm sure there's some parameter to make it not be different for the same input.
-
-Amir Jamal Kaddoura
-Digital Marketer/Prompt Engineer @ WSO
-@Connor There's a soft place in my heart for Douglas Hofstadter too, but I'm pretty sure that's just because I ate too much pizza last night.
-
-John Kohlmeyer
-Developer @ DriveCentric
-@david do you prefer consistency or creativity for your use-case
-
-Connor Hagen
-Senior Business Development Manager @ Microsoft
-@Amir my condolences
-
-David Plon
-Co-founder & CEO @ Portrait Analytics
-consistency. Interesting to put temp to 1 and modulate top_p, will try that!
-
-Riley Goodside
-Staff Prompt Engineer @ Scale
-@Ana Any temperature > 0 will get you responses that change sometimes. If you need to ensure determinism you can set temperature=0, but this has other effects, making its answers generally more conservative and less creative.
-
-Ana Ferreira
-data ops @ talkdesk
-@riley, is there a knowledge about in which cases the temperature=0 generates a different response? Today a certain prompt gave the same response for 5 hours and then it didn't
-
-Ana Ferreira
-data ops @ talkdesk
-i did a correction
-
-Jorge H Cardona G
-CMIO @ Analitica-MD
-@Rahul: but it is the same to us, passing time . . . our answers are changing normally, with base on new evidence, it is a matter of time
-
-Javid Lakha
-Research Engineer @ Legatics
-Try asking it "What weighs more? Two kilograms of feathers or a kilogram of lead." Tested it on nat.dev/compare this morning - all models (incl. ChatGPT) got it wrong.
-
-Vishal Singhania
-Director, Product Management @ Medallia Inc
-@Riley Could ChatGP also give the list of references to knowledge articles it is using behind the scenes to answer a particular question?
-
-Ana Ferreira
-data ops @ talkdesk
-so the same temperature means temperature always=0
-
-Brandon E
-Laserist @ VisionLight Events
-Google Bard, take note of this excellent presentation 8-)
 
 Radu Gheorghiu
 Data Engineer @ Independent Consultant
@@ -428,6 +334,99 @@ https://arxiv.org/abs/2203.06566
 Vishal Singhania
 Director, Product Management @ Medallia Inc
 @charles thanks
+
+Yi Ding
+Programmer @ Red Oak Technologies
+Alex Wang one of the best eyes for talent in the biz. 😀 Great talk!
+
+Radu Gheorghiu
+Data Engineer @ Independent Consultant
+https://github.com/radu-gheorghiu/riley-goodside-scale-ai-event/tree/main
+
+Cristiano Giardina
+President @ Pattern Logic
+Thank you, that was great!
+
+Rebecca Woerner
+Head of Events & Field Marketing @ Scale AI
+Thanks for joining us today! We'll have the webinar available on-demand by end of day tomorrow! We'll see you at the next one!
+
+Connor Hagen
+Senior Business Development Manager @ Microsoft
+Thanks, Riley.
+
+Radu Gheorghiu
+Data Engineer @ Independent Consultant
+Here's a link where I'll post the chat summary & main points
+
+David Bosnak
+CEO @ Attune Media Labs
+Thank you Riley!!
+
+Fatma Tarlaci
+VP of Engineering @ OpenTeams
+Thank you!
+
+Riley Goodside
+Staff Prompt Engineer @ Scale
+Thanks so much everyone!
+
+John Kohlmeyer
+Developer @ DriveCentric
+thanks bihan for moderating
+
+Vishal Singhania
+Director, Product Management @ Medallia Inc
+Thx Riley... presentation was awesome!
+
+Jeff Choi
+Business Director @ Coxwave
+haha pwned!
+amazing seminar!
+
+Emily Quiles
+Generalist @ None ATM
+Thank you Riley!
+
+Bihan Jiang
+Product Manager @ Scale AI
+Thanks for coming everyone! :)
+
+Haseeb Mohammed
+Principal Machine Learning Engineer @ Amgen
+Thanks folks!
+
+R. Brandon Cantrell
+Product Analyst @ HCA Healthcare
+Thanks for having this sesson!
+
+Amir Jamal Kaddoura
+Digital Marketer/Prompt Engineer @ WSO
+Thanks!
+
+Michael Lam
+PM @ Speak
+thanks all
+
+David Soliven
+Security Engineer @ Booz Allen Hamilton
+Thank you, great to be with you all
+
+Vivek Pandit
+AI Engineer @ Microsoft
+Can we also just get the presentation, apart from the recording?
+
+Keene Do
+Marketing @ Scale AI
+See you at the next event!
+
+Jorge H Cardona G
+CMIO @ Analitica-MD
+Thnx!!
+
+Tony McDow
+President/CEO @ Quadralay Corporation
+Great job! Thank you!
 Type your message...
 
 Default Mode
@@ -444,98 +443,6 @@ https://scale.com/blog/chatgpt-vs-davinci
 
 Radu Gheorghiu
 Data Engineer @ Independent Consultant
-@Brandon, you're right, Joe is not going to tune its own model anytime soon, I think.
-
-Haseeb Mohammed
-Principal Machine Learning Engineer @ Amgen
-fine tune it _on the chat_
-
-John Kohlmeyer
-Developer @ DriveCentric
-@cristiano - absolutely for debugging
-
-David Plon
-Co-founder & CEO @ Portrait Analytics
-I get that temp=0 is preferred for most prompts, but for self-consistency, wouldn't you just get the same response each time? So trying to figure out which temp is best for sampling n times
-
-Ana Ferreira
-data ops @ talkdesk
-@riley, is there a knowledge about in which cases the same temperature geenrates a different response? Today a certain prompt gave the same response for 5 hours and then it didn't
-
-EJ Lawless
-Director, Corporate Venture @ Indeed.com
-does this make password cracking easier (potentially)?
-
-Nishank Kuppa
-Mechanical Engineer @ Maxar Technologies
-Thanks Ragu, will definitely check that out!
-
-Nishank Kuppa
-Mechanical Engineer @ Maxar Technologies
-*Radu
-
-Connor Hagen
-Senior Business Development Manager @ Microsoft
-there's a soft place in my heart for Douglas Hofstadter
-
-Riley Goodside
-Staff Prompt Engineer @ Scale
-@David Depends on the task. Temperature can't be too low for consensus since you need some diversity. I often set temp=1 and use top_p instead, usually around 0.9.
-
-Rahul Parundekar
-CEO @ AI Hero
-@Jorge - that's unfortunate - if it can guarantee same output for the same input, maybe integrations on top of products, etc. can be more feasible. I'm sure there's some parameter to make it not be different for the same input.
-
-Amir Jamal Kaddoura
-Digital Marketer/Prompt Engineer @ WSO
-@Connor There's a soft place in my heart for Douglas Hofstadter too, but I'm pretty sure that's just because I ate too much pizza last night.
-
-John Kohlmeyer
-Developer @ DriveCentric
-@david do you prefer consistency or creativity for your use-case
-
-Connor Hagen
-Senior Business Development Manager @ Microsoft
-@Amir my condolences
-
-David Plon
-Co-founder & CEO @ Portrait Analytics
-consistency. Interesting to put temp to 1 and modulate top_p, will try that!
-
-Riley Goodside
-Staff Prompt Engineer @ Scale
-@Ana Any temperature > 0 will get you responses that change sometimes. If you need to ensure determinism you can set temperature=0, but this has other effects, making its answers generally more conservative and less creative.
-
-Ana Ferreira
-data ops @ talkdesk
-@riley, is there a knowledge about in which cases the temperature=0 generates a different response? Today a certain prompt gave the same response for 5 hours and then it didn't
-
-Ana Ferreira
-data ops @ talkdesk
-i did a correction
-
-Jorge H Cardona G
-CMIO @ Analitica-MD
-@Rahul: but it is the same to us, passing time . . . our answers are changing normally, with base on new evidence, it is a matter of time
-
-Javid Lakha
-Research Engineer @ Legatics
-Try asking it "What weighs more? Two kilograms of feathers or a kilogram of lead." Tested it on nat.dev/compare this morning - all models (incl. ChatGPT) got it wrong.
-
-Vishal Singhania
-Director, Product Management @ Medallia Inc
-@Riley Could ChatGP also give the list of references to knowledge articles it is using behind the scenes to answer a particular question?
-
-Ana Ferreira
-data ops @ talkdesk
-so the same temperature means temperature always=0
-
-Brandon E
-Laserist @ VisionLight Events
-Google Bard, take note of this excellent presentation 8-)
-
-Radu Gheorghiu
-Data Engineer @ Independent Consultant
 @Vishal, I tried this. But it halucinated quite a bit. Most of the links/articles it provided were actually fake, or at least I couldn't find them on Google / Bing.
 
 Connor Hagen
@@ -847,6 +754,99 @@ https://arxiv.org/abs/2203.06566
 Vishal Singhania
 Director, Product Management @ Medallia Inc
 @charles thanks
+
+Yi Ding
+Programmer @ Red Oak Technologies
+Alex Wang one of the best eyes for talent in the biz. 😀 Great talk!
+
+Radu Gheorghiu
+Data Engineer @ Independent Consultant
+https://github.com/radu-gheorghiu/riley-goodside-scale-ai-event/tree/main
+
+Cristiano Giardina
+President @ Pattern Logic
+Thank you, that was great!
+
+Rebecca Woerner
+Head of Events & Field Marketing @ Scale AI
+Thanks for joining us today! We'll have the webinar available on-demand by end of day tomorrow! We'll see you at the next one!
+
+Connor Hagen
+Senior Business Development Manager @ Microsoft
+Thanks, Riley.
+
+Radu Gheorghiu
+Data Engineer @ Independent Consultant
+Here's a link where I'll post the chat summary & main points
+
+David Bosnak
+CEO @ Attune Media Labs
+Thank you Riley!!
+
+Fatma Tarlaci
+VP of Engineering @ OpenTeams
+Thank you!
+
+Riley Goodside
+Staff Prompt Engineer @ Scale
+Thanks so much everyone!
+
+John Kohlmeyer
+Developer @ DriveCentric
+thanks bihan for moderating
+
+Vishal Singhania
+Director, Product Management @ Medallia Inc
+Thx Riley... presentation was awesome!
+
+Jeff Choi
+Business Director @ Coxwave
+haha pwned!
+amazing seminar!
+
+Emily Quiles
+Generalist @ None ATM
+Thank you Riley!
+
+Bihan Jiang
+Product Manager @ Scale AI
+Thanks for coming everyone! :)
+
+Haseeb Mohammed
+Principal Machine Learning Engineer @ Amgen
+Thanks folks!
+
+R. Brandon Cantrell
+Product Analyst @ HCA Healthcare
+Thanks for having this sesson!
+
+Amir Jamal Kaddoura
+Digital Marketer/Prompt Engineer @ WSO
+Thanks!
+
+Michael Lam
+PM @ Speak
+thanks all
+
+David Soliven
+Security Engineer @ Booz Allen Hamilton
+Thank you, great to be with you all
+
+Vivek Pandit
+AI Engineer @ Microsoft
+Can we also just get the presentation, apart from the recording?
+
+Keene Do
+Marketing @ Scale AI
+See you at the next event!
+
+Jorge H Cardona G
+CMIO @ Analitica-MD
+Thnx!!
+
+Tony McDow
+President/CEO @ Quadralay Corporation
+Great job! Thank you!
 Type your message...
 
 LLM Prompt Engineering and RLHF: History and Techniques - Event | Scale Virtual Events
